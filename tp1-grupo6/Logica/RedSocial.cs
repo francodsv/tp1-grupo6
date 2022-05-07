@@ -11,15 +11,15 @@ namespace tp1_grupo6.Logica
 
         //List<Post> posts = new List<Post>();
 
-        //List<Tag> tags = new List<Tag>();
+        private List<Tag> tags;
 
         public Usuario usuarioActual { get; set; }
 
         public RedSocial(List<Usuario> usuarios, Usuario usuarioActual)
         {
-            usuarios = new List<Usuario>();
+            this.usuarios = new List<Usuario>();
             //this.posts = posts;
-            //this.tags = tags;
+            this.tags = new List<Tag>();
             this.usuarioActual = usuarioActual;
         }
         
