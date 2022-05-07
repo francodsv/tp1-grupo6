@@ -4,7 +4,7 @@ using System.Text;
 
 namespace tp1_grupo6.Logica
 {
-    internal class Tag
+    public class Tag
     {
         public int ID    { get; set; }
         public String Palabra { get; set; }

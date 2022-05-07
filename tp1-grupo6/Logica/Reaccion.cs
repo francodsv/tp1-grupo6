@@ -4,7 +4,7 @@ using System.Text;
 
 namespace tp1_grupo6.Logica
 {
-    class Reaccion
+    public class Reaccion
     {
         public int ID { get; set; }
         public Enum Tipo { get; set; }

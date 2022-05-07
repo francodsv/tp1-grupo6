@@ -4,7 +4,7 @@ using System.Text;
 
 namespace tp1_grupo6.Logica
 {
-     class Usuario
+     public class Usuario
     {
         public int ID { get; set; }
 
@@ -22,7 +22,7 @@ namespace tp1_grupo6.Logica
         public List<Usuario> Amigos { get; set; }
         public List <Post> MisPosts { get; set; }
         public List<Comentario> MisComentarios { get; set; }
-        public List<Reacciones> MisReacciones { get; set; }
+        public List<Reaccion> MisReacciones { get; set; }
 
         //creeria que el constructor no necesita crearse con reacciones , comentarios , posts y usuarios
 

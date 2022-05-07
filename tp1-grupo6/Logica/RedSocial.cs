@@ -2,47 +2,69 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace tp1_grupo6.Logica
 {
     public class RedSocial
     {
-        List<Usuario> usuarios = new List<Usuario>();
+        private List<Usuario> usuarios;
 
-        List<Post> posts = new List<Post>();
+        //List<Post> posts = new List<Post>();
 
-        List<Tag> tags = new List<Tag>();
+        //List<Tag> tags = new List<Tag>();
 
-        public Usuario usuarioActual;
+        public Usuario usuarioActual { get; set; }
 
-        /* CREON QUE NO NECESITARIA CONSTRUCTOR RED SOCIAL
-        public RedSocial(List<Usuario> usuarios, List<Post> posts, List<Tag> tags, Usuario usuarioActual)
+        public RedSocial(List<Usuario> usuarios, Usuario usuarioActual)
         {
-            this.usuarios = usuarios;
-            this.posts = posts;
-            this.tags = tags;
+            usuarios = new List<Usuario>();
+            //this.posts = posts;
+            //this.tags = tags;
             this.usuarioActual = usuarioActual;
         }
-        */
+        
 
-        public RegistrarUsuario(Usuario u)
-        {
-
+        public void RegistrarUsuario(int ID, int DNI, String Nombre, String Apellido, String Mail, String Password, int IntentosFallidos, bool Bloqueado)
+        {   
+            foreach (Usuario usuario in usuarios)
+            {
+                if (usuario.Mail != Mail)
+                {
+                    usuarios.Add(new Usuario(ID, DNI, Nombre, Apellido, Mail, Password, IntentosFallidos, Bloqueado));
+                }   
+            }   
         } 
 
-        public ModificarUsuario(Usuario u)
+        public void ModificarUsuario(Usuario u)
         {
 
         }
 
-        public EliminarUsuario()
+        public void EliminarUsuario(Usuario u, String Mail)
         {
-
+            foreach (Usuario usuario in usuarios)
+            {
+                if (usuario.Mail == Mail)
+                {
+                    usuarios.Remove(u);
+                }
+            }
+                
         }
 
-        public IniciarUsuario(string usuario, string contraseña)
+        /*public IniciarUsuario(string usuario, string contraseña)
         {
-            //bool
-        }
+            bool encontre = false;
+            foreach (Usuario user in usuarios)
+            {
+                if (user.nombre.Equals(usuario) && user.pass.Equals(pass))
+                {
+                    encontre = true;
+                    usuarioLogged = user;
+                }
+            }
+            return encontre;
+        }*/
 
         public CerrarSesion()
         {

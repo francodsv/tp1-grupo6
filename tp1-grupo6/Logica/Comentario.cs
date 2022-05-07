@@ -4,16 +4,16 @@ using System.Text;
 
 namespace tp1_grupo6.Logica
 {
-    class Comentario
+    public class Comentario
     {
         public int ID { get; set; }
         public Post Post { get; set; }
         public string Contenido { get; set; }
         public Usuario Usuario { get; set; }
-        public Date fecha { get; set; }
+        public DateTime fecha { get; set; }
 
 
-        public Comentario(int ID, Post Post, string Contenido, Usuario Usuario, Date fecha)
+        public Comentario(int ID, Post Post, string Contenido, Usuario Usuario, DateTime fecha)
         {
             this.ID = ID;
             this.Post = Post;
