@@ -25,6 +25,10 @@ namespace tp1_grupo6.Logica
         public List<Reaccion> MisReacciones { get; set; }
 
         //creeria que el constructor no necesita crearse con reacciones , comentarios , posts y usuarios
+        public Usuario(String Nombre, String Password) {
+            this.Nombre = Nombre;
+            this.Password = Password;
+        }
 
         public Usuario(){ }
         public Usuario (int ID,int DNI, String Nombre, String Apellido, String Mail, String Password, int IntentosFallidos, bool Bloqueado)
@@ -40,5 +44,9 @@ namespace tp1_grupo6.Logica
 
         }
 
-    }
+        public override string ToString()
+        {
+            return id + "," + dni + "," + nombre + "," + mail + "," + password + ","  + bloqueado;
+
+        }
 }
