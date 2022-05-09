@@ -9,7 +9,9 @@ namespace tp1_grupo6.Logica
     {
         private List<Usuario> usuarios;
 
-        //List<Post> posts = new List<Post>();
+        private int IdUsuarios;
+
+        List<Post> posts;
 
         private List<Tag> tags;
 
@@ -18,22 +20,30 @@ namespace tp1_grupo6.Logica
         public RedSocial(List<Usuario> usuarios, Usuario usuarioActual)
         {
             this.usuarios = new List<Usuario>();
-            //this.posts = posts;
+            this.posts = new List<Post>();
             this.tags = new List<Tag>();
             this.usuarioActual = usuarioActual;
+            this.IdUsuarios = 0;
         }
-        
 
-        public void RegistrarUsuario(int ID, int DNI, String Nombre, String Apellido, String Mail, String Password, int IntentosFallidos, bool Bloqueado)
-        {   
-            foreach (Usuario usuario in usuarios)
+
+        public void RegistrarUsuario(Usuario user, string Mail)
+        {
+            foreach (Usuario user in usuarios)
             {
-                if (usuario.Mail != Mail)
+                if (user.Mail != Mail)
                 {
-                    usuarios.Add(new Usuario(ID, DNI, Nombre, Apellido, Mail, Password, IntentosFallidos, Bloqueado));
-                }   
-            }   
-        } 
+                    Usuario nuevoUsuario = new Usuario(user.ID, user.DNI, user.Nombre, user.Apellido, user.Mail, user.Password, user.IntentosFallidos, user.Bloqueado);
+                    usuarios.Add(nuevoUsuario);
+                    IdUsuarios++;
+                    nuevoUsuario.ID = IdUsuarios;
+                }
+                else
+                {
+                    Console.WriteLine("El usuario que desea crear ya se encuentra registrea");
+                }
+            }
+        }
 
         public void ModificarUsuario(Usuario u)
         {
@@ -48,23 +58,24 @@ namespace tp1_grupo6.Logica
                 {
                     usuarios.Remove(u);
                 }
+
             }
-                
+
         }
 
-        /*public IniciarUsuario(string usuario, string contraseña)
+        public bool IniciarUsuario(String mail, String Password)
         {
             bool encontre = false;
             foreach (Usuario user in usuarios)
             {
-                if (user.nombre.Equals(usuario) && user.pass.Equals(pass))
+                if (user.Mail.Equals(mail) && user.Password.Equals(Password))
                 {
                     encontre = true;
-                    usuarioLogged = user;
+                    usuarioActual = user;
                 }
             }
             return encontre;
-        }*/
+        }
 
         public CerrarSesion()
         {
@@ -73,6 +84,10 @@ namespace tp1_grupo6.Logica
 
         public AgregarAmigo(Usuario amigo)
         {
+            if (usuarioLogged != null)
+            {
+                usuarioLogged.amigos.Add(amigo);
+            }
 
         }
 
@@ -95,5 +110,62 @@ namespace tp1_grupo6.Logica
         {
 
         }
+
+        public Comentar(Post p, Comentario c)
+        {
+
+        }
+
+        public ModificarComentario(Post p, Comentario c)
+        {
+
+        }
+
+        public QuitarComentario(Post p, Comentario c)
+        {
+
+        }
+
+        public Reaccionar(Post p, Reaccion r)
+        {
+
+        }
+
+        public ModificarReaccion(Post p, Reaccion r)
+        {
+
+        }
+
+        public QuitarReaccion(Post p, Reaccion r)
+        {
+
+        }
+
+        public MostrarDatos()
+        {
+
+        }
+
+        public MostrarPosts()
+        {
+
+        }
+
+        public MostrarPostsAmigos()
+        {
+
+        }
+
+        public BuscarPosts(string Contenido, DateTime Fecha, Tag t)
+        {
+
+        }
+
+
+
+
+
+
+
     }
 }
