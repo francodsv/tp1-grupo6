@@ -14,5 +14,15 @@ namespace tp1_grupo6.Front
         {
             InitializeComponent();
         }
+
+        private void index_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
