@@ -9,39 +9,29 @@ namespace tp1_grupo6.Logica
     {
         private List<Usuario> usuarios;
 
-        private List<Post> posts;
+        //List<Post> posts = new List<Post>();
 
         private List<Tag> tags;
 
         public Usuario usuarioActual { get; set; }
 
-        private int IdUsuarios;
-
-        public RedSocial(List<Usuario> usuarios, List<Post> posts, List<Tag> tags, Usuario usuarioActual)
+        public RedSocial(List<Usuario> usuarios, Usuario usuarioActual)
         {
             this.usuarios = new List<Usuario>();
-            this.posts = new List<Post>();
+            //this.posts = posts;
             this.tags = new List<Tag>();
             this.usuarioActual = usuarioActual;
-            this.IdUsuarios = 0;
         }
         
 
-        public void RegistrarUsuario(string Mail)
+        public void RegistrarUsuario(int ID, int DNI, String Nombre, String Apellido, String Mail, String Password, int IntentosFallidos, bool Bloqueado)
         {   
-            foreach (Usuario user in usuarios)
+            foreach (Usuario usuario in usuarios)
             {
-                if (user.Mail != Mail)
+                if (usuario.Mail != Mail)
                 {
-                    Usuario nuevoUsuario = new Usuario(user.ID, user.DNI, user.Nombre, user.Apellido, user.Mail, user.Password, user.IntentosFallidos, user.Bloqueado);
-                    usuarios.Add(nuevoUsuario);
-                    IdUsuarios++;
-                    nuevoUsuario.ID = IdUsuarios;
-                }
-                else
-                {
-                    Console.WriteLine("El usuario que desea crear ya se encuentra registrado");
-                }
+                    usuarios.Add(new Usuario(ID, DNI, Nombre, Apellido, Mail, Password, IntentosFallidos, Bloqueado));
+                }   
             }   
         } 
 
@@ -58,50 +48,36 @@ namespace tp1_grupo6.Logica
                 {
                     usuarios.Remove(u);
                 }
-
             }
                 
         }
 
-        public bool IniciarUsuario(String mail, String Password)
+        /*public IniciarUsuario(string usuario, string contraseña)
         {
             bool encontre = false;
             foreach (Usuario user in usuarios)
             {
-                if (user.Mail.Equals(mail) && user.Password.Equals(Password))
+                if (user.nombre.Equals(usuario) && user.pass.Equals(pass))
                 {
                     encontre = true;
-                    usuarioActual = user;
+                    usuarioLogged = user;
                 }
             }
             return encontre;
-        }
+        }*/
 
-        public void CerrarSesion()
+        public CerrarSesion()
         {
-            if(usuarioActual != null)
-            {
-                usuarioActual = null;
-            }
-        }
-
-        public void AgregarAmigo(Usuario amigo)
-        {
-            if (usuarioActual != null)
-            {
-                usuarioActual.Amigos.Add(amigo);
-            }
 
         }
 
-        public void QuitarAmigo(Usuario exAmigo)
+        public AgregarAmigo(Usuario amigo)
         {
-            if (usuarioActual.Amigos.Contains(exAmigo))
-            {
-                usuarioActual = exAmigo;
 
-                usuarioActual.Amigos.Remove(exAmigo);
-            }
+        }
+
+        public QuitarAmigo(Usuario exAmigo)
+        {
 
         }
 
@@ -119,62 +95,5 @@ namespace tp1_grupo6.Logica
         {
 
         }
-
-        public Comentar(Post p, Comentario c)
-        {
-
-        }
-
-        public ModificarComentario(Post p, Comentario c)
-        {
-
-        }
-
-        public QuitarComentario(Post p, Comentario c)
-        {
-
-        }
-
-        public Reaccionar(Post p, Reaccion r)
-        {
-
-        }
-
-        public ModificarReaccion(Post p, Reaccion r)
-        {
-
-        }
-
-        public QuitarReaccion(Post p, Reaccion r)
-        {
-
-        }
-
-        public MostrarDatos()
-        {
-
-        }
-
-        public MostrarPosts()
-        {
-
-        }
-
-        public MostrarPostsAmigos()
-        {
-
-        }
-
-        public BuscarPosts(string Contenido, DateTime Fecha, Tag t)
-        {
-
-        }
-
-
-
-
-
-
-
     }
 }
