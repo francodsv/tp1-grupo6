@@ -17,7 +17,7 @@ namespace tp1_grupo6.Logica
 
         public Usuario usuarioActual { get; set; }
 
-        public RedSocial(List<Usuario> usuarios, Usuario usuarioActual)
+        public RedSocial(/*List<Usuario> usuarios, Usuario usuarioActual*/)
         {
             this.usuarios = new List<Usuario>();
             this.posts = new List<Post>();
@@ -26,23 +26,27 @@ namespace tp1_grupo6.Logica
             this.IdUsuarios = 0;
         }
 
-
-        public void RegistrarUsuario(Usuario user, string Mail)
+        public void RegistrarUsuario(int DNI, String Nombre, String Apellido, String Mail, String Password)
         {
-            foreach (Usuario user in usuarios)
+            usuarios.Add(new Usuario(DNI, Nombre, Apellido, Mail, Password));
+        }
+
+        public void RegistrarUsuario(Usuario user)
+        {
+            /*foreach (Usuario user in usuarios)
             {
                 if (user.Mail != Mail)
-                {
+                {*/
                     Usuario nuevoUsuario = new Usuario(user.ID, user.DNI, user.Nombre, user.Apellido, user.Mail, user.Password, user.IntentosFallidos, user.Bloqueado);
                     usuarios.Add(nuevoUsuario);
                     IdUsuarios++;
                     nuevoUsuario.ID = IdUsuarios;
-                }
+                /*}
                 else
                 {
                     Console.WriteLine("El usuario que desea crear ya se encuentra registrea");
                 }
-            }
+            }*/
         }
 
         public void ModificarUsuario(Usuario u)
@@ -73,90 +77,95 @@ namespace tp1_grupo6.Logica
                     encontre = true;
                     usuarioActual = user;
                 }
+                else
+                {
+                    Console.WriteLine("El usuario no existe o algun dato no es correcto en las credenciales ingresadas");
+                }
+
             }
             return encontre;
         }
 
-        public CerrarSesion()
+        public void CerrarSesion()
         {
 
         }
 
-        public AgregarAmigo(Usuario amigo)
+        public void AgregarAmigo(Usuario amigo)
         {
-            if (usuarioLogged != null)
+            if (usuarioActual != null)
             {
-                usuarioLogged.amigos.Add(amigo);
+                usuarioActual.Amigos.Add(amigo);
             }
 
         }
 
-        public QuitarAmigo(Usuario exAmigo)
+        public void QuitarAmigo(Usuario exAmigo)
         {
 
         }
 
-        public Postear(Post p, List<Tag> t)
+        public void Postear(Post p, List<Tag> t)
         {
 
         }
 
-        public ModificarPost(Post p)
+        public void ModificarPost(Post p)
         {
 
         }
 
-        public EliminarPost(Post p)
+        public void EliminarPost(Post p)
         {
 
         }
 
-        public Comentar(Post p, Comentario c)
+        public void Comentar(Post p, Comentario c)
         {
 
         }
 
-        public ModificarComentario(Post p, Comentario c)
+        public void ModificarComentario(Post p, Comentario c)
         {
 
         }
 
-        public QuitarComentario(Post p, Comentario c)
+        public void QuitarComentario(Post p, Comentario c)
         {
 
         }
 
-        public Reaccionar(Post p, Reaccion r)
+        public void Reaccionar(Post p, Reaccion r)
         {
 
         }
 
-        public ModificarReaccion(Post p, Reaccion r)
+        public void ModificarReaccion(Post p, Reaccion r)
         {
 
         }
 
-        public QuitarReaccion(Post p, Reaccion r)
+        public void QuitarReaccion(Post p, Reaccion r)
         {
 
         }
 
-        public MostrarDatos()
+        public void MostrarDatos()
         {
 
         }
 
-        public MostrarPosts()
+        public void MostrarPosts()
         {
 
         }
 
-        public MostrarPostsAmigos()
+        public void MostrarPostsAmigos()
         {
 
         }
 
-        public BuscarPosts(string Contenido, DateTime Fecha, Tag t)
+        public void BuscarPosts(string Contenido, DateTime Fecha, Tag t)
         {
 
         }
