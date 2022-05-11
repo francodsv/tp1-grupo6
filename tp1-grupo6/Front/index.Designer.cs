@@ -1,4 +1,6 @@
-﻿namespace tp1_grupo6.Front
+﻿using System.Windows.Forms;
+
+namespace tp1_grupo6.Front
 {
     partial class index
     {
@@ -93,15 +95,7 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    );
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(-5, -5);
@@ -495,6 +489,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel5;
+        private PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
