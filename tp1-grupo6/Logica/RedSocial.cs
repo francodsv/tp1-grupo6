@@ -26,7 +26,7 @@ namespace tp1_grupo6.Logica
             this.usuarioActual = usuarioActual;
             this.IdUsuarios = 0;
         }
-
+       
         public bool RegistrarUsuario(int DNI, string Nombre, string Apellido, string Mail, string Password)
         {
             if (!existeUsuario(Mail))
@@ -46,31 +46,48 @@ namespace tp1_grupo6.Logica
             return false;
         }
 
-        public void ModificarUsuario(Usuario u)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //Falta probar
+        public void ModificarUsuario(int newID, string newNombre, string newApellido, string newMail, string newPassword)
         {
-            if (usuarios.Count > 0)
+            
+            if (usuarioActual != null && usuarioActual.ID == newID)
             {
-                bool encontre = false;
-                //registro el ID del usuario a modificar
-                int id = 0;
-                id = u.ID;
-                foreach (Usuario nuevoUsuario in usuarios)
-                {
-                    if (nuevoUsuario.ID == id)
-                    {
-                        usuarios.Remove(u);
-                    }
-                    else
-                    {
-                       // Usuario nuevoUsuario = new Usuario(user.ID, user.DNI, user.Nombre, user.Apellido, user.Mail, user.Password, user.IntentosFallidos, user.Bloqueado);
-                        usuarios.Add(nuevoUsuario);
-                        IdUsuarios++;
-                        nuevoUsuario.ID = IdUsuarios;
-                    }
-                }
+
+
+                usuarioActual.Nombre = newNombre;
+                usuarioActual.Apellido = newApellido;
+                usuarioActual.Mail=newMail;
+                usuarioActual.Password=newPassword;
+
+
             }
         }
 
+
+
+
+
+
+
+
+
+
+
+        //no se si funciona
         public void EliminarUsuario(Usuario u, string Mail)
         {
             foreach (Usuario usuario in usuarios)
@@ -81,6 +98,10 @@ namespace tp1_grupo6.Logica
                 }
             }
         }
+
+
+
+
         // Devuelve el Usuario correspondiente al Mail recibido.
         public Usuario devolverUsuario(string Mail)
         {
@@ -103,12 +124,13 @@ namespace tp1_grupo6.Logica
             {
                 if (usuario.Mail == Mail && usuario.Password == Password)
                 {
+                    usuarioActual = usuario;
                     return true;
                 }
             }
             return false;
         }
-
+        // Se valida si el usuario existe y devuelve true o false
         public bool existeUsuario(string Mail)
         {
             foreach (Usuario usuario in usuarios)
@@ -120,7 +142,7 @@ namespace tp1_grupo6.Logica
             }
             return false;
         }
-
+        // se obtiene el ID del usuario
         public int obtenerUsuarioId(string Mail)
         {
             foreach (Usuario u in usuarios)
@@ -148,6 +170,20 @@ namespace tp1_grupo6.Logica
             return todoOk;
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // funciona
         public bool CerrarSesion(Usuario u)
         {
             //Pregunto si existe usuario Actual
@@ -159,15 +195,38 @@ namespace tp1_grupo6.Logica
             return true;
         }
 
+
+
+
+
+
+
+
+
+
+
+
+        // no se si funciona
         public void AgregarAmigo(Usuario amigo)
         {
             if (usuarioActual != null)
             {
+
                 usuarioActual.Amigos.Add(amigo);
+
             }
 
         }
 
+
+
+
+
+
+
+
+
+        // no funciona
         public void QuitarAmigo(Usuario exAmigo)
         {
             if (usuarioActual != null)
@@ -177,6 +236,19 @@ namespace tp1_grupo6.Logica
             }
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+        // no se si funciona
         public void Postear(Post p, List<Tag> t)
         {
             bool encontre = false;
@@ -206,6 +278,23 @@ namespace tp1_grupo6.Logica
             }
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // no funciona
         public void ModificarPost(int pID, Usuario pUsuario, string pContenido, List<Comentario> pComentarios, List<Reaccion> pReacciones, List<Tag> pTags, DateTime pFecha)
         {
             foreach (Post post in posts)
@@ -223,11 +312,35 @@ namespace tp1_grupo6.Logica
             }
         }
 
+
+
+
+
+
+
+
+
+
+        // no hecho
         public void EliminarPost(Post p)
         {
 
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // no funciona
         public void Comentar(Post p, Comentario c)
         {
             //pregunto si el conteo de post es mayor a 0 para determinar si existen posts
@@ -253,6 +366,23 @@ namespace tp1_grupo6.Logica
             }
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // no funciona
         public void ModificarComentario(Post p, Comentario c)
         {
                 if (posts.Count > 0)
@@ -276,6 +406,24 @@ namespace tp1_grupo6.Logica
                     }
                 }
          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         public void QuitarComentario(Post p, Comentario c)
@@ -310,6 +458,20 @@ namespace tp1_grupo6.Logica
                 }
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public void Reaccionar(Post p, Reaccion r)
         {
