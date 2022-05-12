@@ -87,22 +87,15 @@ namespace tp1_grupo6.Front
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(-5, -5);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1350, 802);
-            this.panel1.TabIndex = 0;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.ErrorImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(173, 27);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 47);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
@@ -119,21 +112,16 @@ namespace tp1_grupo6.Front
             this.panel7.Controls.Add(this.button8);
             this.panel7.Controls.Add(this.textBox2);
             this.panel7.Controls.Add(this.button7);
-            this.panel7.Location = new System.Drawing.Point(461, 301);
+            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(736, 476);
-            this.panel7.TabIndex = 4;
             // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.RoyalBlue;
             this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button13.ForeColor = System.Drawing.Color.Transparent;
-            this.button13.Location = new System.Drawing.Point(300, 287);
+            resources.ApplyResources(this.button13, "button13");
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(87, 33);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "Reacción";
             this.button13.UseVisualStyleBackColor = false;
             // 
             // button12
@@ -141,11 +129,8 @@ namespace tp1_grupo6.Front
             this.button12.BackColor = System.Drawing.Color.RoyalBlue;
             this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button12.ForeColor = System.Drawing.Color.Transparent;
-            this.button12.Location = new System.Drawing.Point(114, 364);
+            resources.ApplyResources(this.button12, "button12");
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(87, 33);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "Quitar";
             this.button12.UseVisualStyleBackColor = false;
             // 
             // button11
@@ -153,29 +138,22 @@ namespace tp1_grupo6.Front
             this.button11.BackColor = System.Drawing.Color.RoyalBlue;
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(21, 364);
+            resources.ApplyResources(this.button11, "button11");
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(87, 33);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "Modificar";
             this.button11.UseVisualStyleBackColor = false;
             // 
             // listView3
             // 
             this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(21, 326);
+            resources.ApplyResources(this.listView3, "listView3");
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(702, 32);
-            this.listView3.TabIndex = 11;
             this.listView3.UseCompatibleStateImageBehavior = false;
             // 
             // listView2
             // 
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(21, 208);
+            resources.ApplyResources(this.listView2, "listView2");
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(702, 60);
-            this.listView2.TabIndex = 10;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // button10
@@ -183,11 +161,8 @@ namespace tp1_grupo6.Front
             this.button10.BackColor = System.Drawing.Color.RoyalBlue;
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.Location = new System.Drawing.Point(207, 287);
+            resources.ApplyResources(this.button10, "button10");
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(87, 33);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "Eliminar";
             this.button10.UseVisualStyleBackColor = false;
             // 
             // button9
@@ -195,11 +170,8 @@ namespace tp1_grupo6.Front
             this.button9.BackColor = System.Drawing.Color.RoyalBlue;
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.ForeColor = System.Drawing.Color.Transparent;
-            this.button9.Location = new System.Drawing.Point(114, 287);
+            resources.ApplyResources(this.button9, "button9");
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(87, 33);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Comentar";
             this.button9.UseVisualStyleBackColor = false;
             // 
             // button8
@@ -207,30 +179,22 @@ namespace tp1_grupo6.Front
             this.button8.BackColor = System.Drawing.Color.RoyalBlue;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.Location = new System.Drawing.Point(21, 287);
+            resources.ApplyResources(this.button8, "button8");
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(87, 33);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Modificar";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 25);
+            resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(578, 26);
-            this.textBox2.TabIndex = 6;
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.RoyalBlue;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.ForeColor = System.Drawing.Color.Transparent;
-            this.button7.Location = new System.Drawing.Point(21, 22);
+            resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(118, 33);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "Buscar";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // panel5
@@ -240,36 +204,27 @@ namespace tp1_grupo6.Front
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.button2);
-            this.panel5.Location = new System.Drawing.Point(461, 123);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(736, 149);
-            this.panel5.TabIndex = 3;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 74);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(515, 26);
-            this.textBox1.TabIndex = 5;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(736, 16);
-            this.panel6.TabIndex = 4;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.RoyalBlue;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(605, 89);
+            resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 47);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Subir Foto";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -277,11 +232,8 @@ namespace tp1_grupo6.Front
             this.button2.BackColor = System.Drawing.Color.RoyalBlue;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(605, 36);
+            resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 47);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Publicar";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // panel4
@@ -290,55 +242,37 @@ namespace tp1_grupo6.Front
             this.panel4.Controls.Add(this.listView1);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(117, 269);
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(268, 511);
-            this.panel4.TabIndex = 2;
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 104);
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(262, 404);
-            this.listView1.TabIndex = 6;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(101, 67);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Amigos:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(114, 18);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "User";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(117, 123);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(268, 149);
-            this.panel3.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(56, 64);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panel2
@@ -349,21 +283,16 @@ namespace tp1_grupo6.Front
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.menuStrip1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1344, 48);
-            this.panel2.TabIndex = 0;
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.RoyalBlue;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button6.Location = new System.Drawing.Point(1187, 6);
+            resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(137, 42);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Perfil";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -371,11 +300,8 @@ namespace tp1_grupo6.Front
             this.button5.BackColor = System.Drawing.Color.RoyalBlue;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button5.Location = new System.Drawing.Point(901, 6);
+            resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(137, 42);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Amigos";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -383,11 +309,8 @@ namespace tp1_grupo6.Front
             this.button4.BackColor = System.Drawing.Color.RoyalBlue;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button4.Location = new System.Drawing.Point(758, 6);
+            resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(137, 42);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -395,11 +318,8 @@ namespace tp1_grupo6.Front
             this.button1.BackColor = System.Drawing.Color.RoyalBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button1.Location = new System.Drawing.Point(1044, 6);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Cerrar Sesión";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -410,56 +330,43 @@ namespace tp1_grupo6.Front
             this.notificacionesToolStripMenuItem,
             this.cerrarSesiónToolStripMenuItem,
             this.userToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1344, 24);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.homeToolStripMenuItem.Text = "Home";
+            resources.ApplyResources(this.homeToolStripMenuItem, "homeToolStripMenuItem");
             // 
             // notificacionesToolStripMenuItem
             // 
             this.notificacionesToolStripMenuItem.Name = "notificacionesToolStripMenuItem";
-            this.notificacionesToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.notificacionesToolStripMenuItem.Text = "Notificaciones";
+            resources.ApplyResources(this.notificacionesToolStripMenuItem, "notificacionesToolStripMenuItem");
             // 
             // cerrarSesiónToolStripMenuItem
             // 
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            resources.ApplyResources(this.cerrarSesiónToolStripMenuItem, "cerrarSesiónToolStripMenuItem");
             // 
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
-            this.userToolStripMenuItem.Text = "User";
+            resources.ApplyResources(this.userToolStripMenuItem, "userToolStripMenuItem");
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // Index
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1336, 787);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Index";
-            this.Text = "[Nombre Red Social]";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.index_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

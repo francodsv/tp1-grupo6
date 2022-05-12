@@ -18,15 +18,16 @@ namespace tp1_grupo6
         private const int cantMaxIntentos = 3;
         public RedSocial miRed;
         private Usuario usuario;
-        public String usuarioIngresado;
-        public String contraseniaIngresada;
+        public string usuarioIngresado;
+        public string contraseniaIngresada;
         public bool loginOk;
-        public IDictionary<String, int> loginHistory = new Dictionary<String, int>();
+        public IDictionary<string, int> loginHistory = new Dictionary<string, int>();
         private string[] argumentos;
 
         public Login(string[] args)
         {
             miRed = new RedSocial();
+            
             InitializeComponent();
             //miRed.RegistrarUsuario(95710895, "Franco", "Perez", "mail@gmail.com", "contraseña");
             argumentos = args;
@@ -104,6 +105,22 @@ namespace tp1_grupo6
         MessageBox.Show("El usuario no existe o algun dato no es correcto en las credenciales ingresadas");
         //label3.Text = "Inicio de sesión: NO";
     }*/
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void Registrar_Click(object sender, EventArgs e)
+        {
+            Form registrarse = new Registrar(this.miRed);
+            textUsuario.Text = "";
+            textContrasenia.Text = "";
+            loginHistory.Clear();
+            this.Hide();
+            registrarse.ShowDialog();
+            this.Show();
         }
     }
 }
