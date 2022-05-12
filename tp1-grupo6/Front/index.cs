@@ -38,13 +38,17 @@ namespace tp1_grupo6.Front
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (miRed.CerrarSesion(usuario) == true)
+   
+
+
+
+            /*if (miRed.CerrarSesion(usuario) == true)
             {
                 Form index = new Index(this.miRed, this.usuario);
                 Form login = new Login();
                 login.Show();
-            }
-            
+            }*/
+
         }
     }
 }

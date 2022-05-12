@@ -17,7 +17,8 @@ namespace tp1_grupo6
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            string[] argumentos = new string[1];
+            Application.Run(new Login(argumentos));
         }
     }
 }

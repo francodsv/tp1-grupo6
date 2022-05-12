@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 
@@ -11,17 +12,17 @@ namespace tp1_grupo6.Logica
 
         private int IdUsuarios;
 
-        List<Post> posts;
+        private List<Post> posts;
 
         private List<Tag> tags;
 
         public Usuario usuarioActual { get; set; }
 
-        public RedSocial(/*List<Usuario> usuarios, Usuario usuarioActual*/)
+        public RedSocial()
         {
-            this.usuarios = new List<Usuario>();
-            this.posts = new List<Post>();
-            this.tags = new List<Tag>();
+            usuarios = new List<Usuario>();
+            posts = new List<Post>();
+            tags = new List<Tag>();
             this.usuarioActual = usuarioActual;
             this.IdUsuarios = 0;
         }
@@ -84,23 +85,71 @@ namespace tp1_grupo6.Logica
                 }
             }
         }
-
-        public bool IniciarUsuario(String mail, String Password)
+        // Devuelve el Usuario correspondiente al Mail recibido.
+        public Usuario devolverUsuario(String Mail)
         {
-            bool encontre = false;
-            foreach (Usuario user in usuarios)
+            if (usuarios.Count() > 0)
             {
-                if (user.Mail.Equals(mail) && user.Password.Equals(Password))
+                foreach (Usuario usuario in usuarios)
                 {
-                    encontre = true;
-                    usuarioActual = user;
-                }
-                else
-                {
-                    Console.WriteLine("El usuario no existe o algun dato no es correcto en las credenciales ingresadas");
+                    if (usuario.Mail == Mail)
+                    {
+                        return usuario;
+                    }
                 }
             }
-            return encontre;
+            return null;
+        }
+        // Se autentica al Usuario.
+        public bool IniciarUsuario(String Mail, String Password)
+        {
+            foreach (Usuario usuario in usuarios)
+            {
+                if (usuario.Mail == Mail && usuario.Password == Password)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool existeUsuario(String Mail)
+        {
+            foreach (Usuario usuario in usuarios)
+            {
+                if (usuario.Mail == Mail)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public int obtenerUsuarioId(String Mail)
+        {
+            foreach (Usuario u in usuarios)
+            {
+                if (u.Mail == Mail)
+                {
+                    return u.ID;
+                }
+            }
+            return 0;
+        }
+
+        // Bloquea/Desbloquea el Usuario que se corresponde con el DNI recibido.
+        public bool bloquearDesbloquearUsuario(String Mail, bool Bloqueado)
+        {
+            bool todoOk = false;
+            foreach (Usuario u in usuarios)
+            {
+                if (u.Mail == Mail)
+                {
+                    u.Bloqueado = Bloqueado;
+                    todoOk = true;
+                }
+            }
+            return todoOk;
         }
 
         public bool CerrarSesion(Usuario u)
