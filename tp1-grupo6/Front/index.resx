@@ -57,15 +57,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="Microsoft.DotNet.DesignTools.Server" name="Microsoft.DotNet.DesignTools.Server, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
-  <data name="pictureBox3.ErrorImage" type="Microsoft.DotNet.DesignTools.Utilities.Resources.ResXNullRef, Microsoft.DotNet.DesignTools.Server">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox3.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 27</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -841,10 +840,10 @@
     <value>5</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-5, -5</value>
+    <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1350, 802</value>
+    <value>1339, 873</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
