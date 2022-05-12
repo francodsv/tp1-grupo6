@@ -87,7 +87,7 @@ namespace tp1_grupo6.Front
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            resources.ApplyResources(this.panel1, "panel1");
+            //resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // pictureBox3

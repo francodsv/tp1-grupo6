@@ -125,6 +125,9 @@ namespace tp1_grupo6.Front
             Dispose();
         }
 
+        private void Registrar_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -29,7 +29,6 @@ namespace tp1_grupo6
             miRed = new RedSocial();
             
             InitializeComponent();
-            //miRed.RegistrarUsuario(95710895, "Franco", "Perez", "mail@gmail.com", "contraseña");
             argumentos = args;
         }
         
@@ -91,20 +90,6 @@ namespace tp1_grupo6
             {
                 labelIntentos.Text =  "Usuario inexistente";
             }
-
-    /*if (miRed.IniciarUsuario(textBox1.Text, textBox2.Text))
-    {
-        MessageBox.Show("OK");
-        Form index = new Front.Index(this.miRed, this.usuario);
-        Form login = new Login();  
-        index.Close();
-        login.Show();
-    }
-    else
-    {
-        MessageBox.Show("El usuario no existe o algun dato no es correcto en las credenciales ingresadas");
-        //label3.Text = "Inicio de sesión: NO";
-    }*/
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -121,6 +106,11 @@ namespace tp1_grupo6
             this.Hide();
             registrarse.ShowDialog();
             this.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
