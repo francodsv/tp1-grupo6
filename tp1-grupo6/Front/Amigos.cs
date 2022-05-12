@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace tp1_grupo6.Front
 {
-    public partial class Form2 : Form
+    public partial class Amigos : Form
     {
-        public Form2()
+        public Amigos()
         {
             InitializeComponent();
         }

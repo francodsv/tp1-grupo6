@@ -2,7 +2,7 @@
 
 namespace tp1_grupo6.Front
 {
-    partial class index
+    partial class Index
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,22 @@ namespace tp1_grupo6.Front
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(index));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -47,46 +56,26 @@ namespace tp1_grupo6.Front
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -102,6 +91,20 @@ namespace tp1_grupo6.Front
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1350, 802);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(173, 27);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(160, 47);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // panel7
             // 
@@ -121,6 +124,115 @@ namespace tp1_grupo6.Front
             this.panel7.Size = new System.Drawing.Size(736, 476);
             this.panel7.TabIndex = 4;
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button13.ForeColor = System.Drawing.Color.Transparent;
+            this.button13.Location = new System.Drawing.Point(300, 287);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(87, 33);
+            this.button13.TabIndex = 14;
+            this.button13.Text = "Reacción";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button12.ForeColor = System.Drawing.Color.Transparent;
+            this.button12.Location = new System.Drawing.Point(114, 364);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(87, 33);
+            this.button12.TabIndex = 13;
+            this.button12.Text = "Quitar";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button11.ForeColor = System.Drawing.Color.Transparent;
+            this.button11.Location = new System.Drawing.Point(21, 364);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(87, 33);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Modificar";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // listView3
+            // 
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(21, 326);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(702, 32);
+            this.listView3.TabIndex = 11;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            // 
+            // listView2
+            // 
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(21, 208);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(702, 60);
+            this.listView2.TabIndex = 10;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.ForeColor = System.Drawing.Color.Transparent;
+            this.button10.Location = new System.Drawing.Point(207, 287);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(87, 33);
+            this.button10.TabIndex = 9;
+            this.button10.Text = "Eliminar";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.ForeColor = System.Drawing.Color.Transparent;
+            this.button9.Location = new System.Drawing.Point(114, 287);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(87, 33);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "Comentar";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.ForeColor = System.Drawing.Color.Transparent;
+            this.button8.Location = new System.Drawing.Point(21, 287);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(87, 33);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Modificar";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(145, 25);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(578, 26);
+            this.textBox2.TabIndex = 6;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.ForeColor = System.Drawing.Color.Transparent;
+            this.button7.Location = new System.Drawing.Point(21, 22);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(118, 33);
+            this.button7.TabIndex = 1;
+            this.button7.Text = "Buscar";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.GhostWhite;
@@ -132,6 +244,13 @@ namespace tp1_grupo6.Front
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(736, 149);
             this.panel5.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(65, 74);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(515, 26);
+            this.textBox1.TabIndex = 5;
             // 
             // panel6
             // 
@@ -235,7 +354,7 @@ namespace tp1_grupo6.Front
             this.panel2.Size = new System.Drawing.Size(1344, 48);
             this.panel2.TabIndex = 0;
             // 
-            // button4
+            // button6
             // 
             this.button6.BackColor = System.Drawing.Color.RoyalBlue;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -246,6 +365,30 @@ namespace tp1_grupo6.Front
             this.button6.TabIndex = 7;
             this.button6.Text = "Perfil";
             this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button5.Location = new System.Drawing.Point(901, 6);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(137, 42);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Amigos";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button4.Location = new System.Drawing.Point(758, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(137, 42);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Home";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -258,27 +401,7 @@ namespace tp1_grupo6.Front
             this.button1.TabIndex = 1;
             this.button1.Text = "Cerrar Sesión";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.ErrorImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(173, 27);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 47);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(65, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(515, 26);
-            this.textBox1.TabIndex = 5;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // menuStrip1
             // 
@@ -317,140 +440,15 @@ namespace tp1_grupo6.Front
             this.userToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.userToolStripMenuItem.Text = "User";
             // 
-            // button5
+            // pictureBox2
             // 
-            this.button5.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button5.Location = new System.Drawing.Point(901, 6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(137, 42);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Amigos";
-            this.button5.UseVisualStyleBackColor = false;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button4.Location = new System.Drawing.Point(758, 6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(137, 42);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Home";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.ForeColor = System.Drawing.Color.Transparent;
-            this.button7.Location = new System.Drawing.Point(21, 22);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(118, 33);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "Buscar";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(145, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(578, 26);
-            this.textBox2.TabIndex = 6;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.Location = new System.Drawing.Point(21, 287);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(87, 33);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Modificar";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.ForeColor = System.Drawing.Color.Transparent;
-            this.button9.Location = new System.Drawing.Point(114, 287);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(87, 33);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Comentar";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.Location = new System.Drawing.Point(207, 287);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(87, 33);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "Eliminar";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // listView2
-            // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(21, 208);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(702, 60);
-            this.listView2.TabIndex = 10;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            // 
-            // listView3
-            // 
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(21, 326);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(702, 32);
-            this.listView3.TabIndex = 11;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(21, 364);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(87, 33);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "Modificar";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.ForeColor = System.Drawing.Color.Transparent;
-            this.button12.Location = new System.Drawing.Point(114, 364);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(87, 33);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "Quitar";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.ForeColor = System.Drawing.Color.Transparent;
-            this.button13.Location = new System.Drawing.Point(300, 287);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(87, 33);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "Reacción";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // index
+            // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -459,11 +457,12 @@ namespace tp1_grupo6.Front
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "index";
+            this.Name = "Index";
             this.Text = "[Nombre Red Social]";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.index_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -474,9 +473,9 @@ namespace tp1_grupo6.Front
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

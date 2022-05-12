@@ -1,6 +1,6 @@
 ﻿namespace tp1_grupo6.Front
 {
-    partial class Form3
+    partial class Perfil
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Perfil));
             this.button9 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -51,10 +51,10 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.listView3 = new System.Windows.Forms.ListView();
             this.listView4 = new System.Windows.Forms.ListView();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -112,6 +112,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Cerrar Sesión";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -292,6 +293,33 @@
             this.panel5.Size = new System.Drawing.Size(736, 657);
             this.panel5.TabIndex = 3;
             // 
+            // listView4
+            // 
+            this.listView4.HideSelection = false;
+            this.listView4.Location = new System.Drawing.Point(53, 493);
+            this.listView4.Name = "listView4";
+            this.listView4.Size = new System.Drawing.Size(670, 141);
+            this.listView4.TabIndex = 14;
+            this.listView4.UseCompatibleStateImageBehavior = false;
+            // 
+            // listView3
+            // 
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(53, 298);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(670, 97);
+            this.listView3.TabIndex = 13;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            // 
+            // listView2
+            // 
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(53, 118);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(670, 97);
+            this.listView2.TabIndex = 12;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
@@ -305,41 +333,14 @@
             this.panel1.Size = new System.Drawing.Size(1356, 884);
             this.panel1.TabIndex = 2;
             // 
-            // listView2
-            // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(53, 118);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(670, 97);
-            this.listView2.TabIndex = 12;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            // 
-            // listView3
-            // 
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(53, 298);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(670, 97);
-            this.listView3.TabIndex = 13;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            // 
-            // listView4
-            // 
-            this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(53, 493);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(670, 141);
-            this.listView4.TabIndex = 14;
-            this.listView4.UseCompatibleStateImageBehavior = false;
-            // 
-            // Form3
+            // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1348, 877);
             this.Controls.Add(this.panel1);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "Perfil";
+            this.Text = "Perfil";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

@@ -12,10 +12,14 @@ using tp1_grupo6.Front;
 
 namespace tp1_grupo6
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
+
         public RedSocial miRed;
-        public Form1()
+
+        private Usuario usuario;
+
+        public Login()
         {
             InitializeComponent();
             miRed = new RedSocial();
@@ -33,10 +37,10 @@ namespace tp1_grupo6
             if (miRed.IniciarUsuario(textBox1.Text, textBox2.Text))
             {
                 MessageBox.Show("OK");
-                Form index = new index();
-                Form login = new Form1();
-                index.Show();
-                login.Hide();
+                Form index = new Front.Index(this.miRed, this.usuario);
+                Form login = new Login();  
+                index.Close();
+                login.Show();
             }
             else
             {

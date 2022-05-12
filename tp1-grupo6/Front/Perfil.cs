@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace tp1_grupo6.Front
 {
-    public partial class Form3 : Form
+    public partial class Perfil : Form
     {
-        public Form3()
+        public Perfil()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
