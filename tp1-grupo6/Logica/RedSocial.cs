@@ -65,7 +65,7 @@ namespace tp1_grupo6.Logica
                     }
                     else
                     {
-                        Usuario nuevoUsuario = new Usuario(user.ID, user.DNI, user.Nombre, user.Apellido, user.Mail, user.Password, user.IntentosFallidos, user.Bloqueado);
+                       // Usuario nuevoUsuario = new Usuario(user.ID, user.DNI, user.Nombre, user.Apellido, user.Mail, user.Password, user.IntentosFallidos, user.Bloqueado);
                         usuarios.Add(nuevoUsuario);
                         IdUsuarios++;
                         nuevoUsuario.ID = IdUsuarios;
@@ -103,7 +103,7 @@ namespace tp1_grupo6.Logica
             return encontre;
         }
 
-        public void CerrarSesion()
+        public bool CerrarSesion(Usuario u)
         {
             //Pregunto si existe usuario Actual
             if (usuarioActual != null) 
@@ -111,6 +111,7 @@ namespace tp1_grupo6.Logica
                 //seteo el usuario actual a null
                 usuarioActual = null;
             }
+            return true;
         }
 
         public void AgregarAmigo(Usuario amigo)
@@ -126,7 +127,7 @@ namespace tp1_grupo6.Logica
         {
             if (usuarioActual != null)
             {
-                usuarioActual.Amigos.Remove(amigo);
+                //usuarioActual.Amigos.Remove(amigo);
                 exAmigo.Amigos.Remove(usuarioActual);
             }
         }
@@ -166,7 +167,7 @@ namespace tp1_grupo6.Logica
             {
                 if (post.ID == pID)
                 {
-                    post.Usuario = pUsuario;
+                    //post.Usuario = pUsuario;
                     post.Contenido = pContenido;
                     post.Comentarios = pComentarios;
                     post.Reacciones = pReacciones;
@@ -201,7 +202,7 @@ namespace tp1_grupo6.Logica
                         //al usuario actual le agrego a su lista el comentario que realizó
                         usuarioActual.MisComentarios.Add(c);
                         //si realiza mas comentarios deben tener ID  diferente
-                        usuarioActual.MisComentarios.
+                        //usuarioActual.MisComentarios.
                     }
                 }
             }
@@ -221,9 +222,9 @@ namespace tp1_grupo6.Logica
                         {
                             encontre = true;
                             //remuevo el ultimo comentario dentro del pool de comentarios del usuario actual
-                            usuarioActual.MisComentarios.Remove(usuarioActual.MisComentarios.Last());
+                            //usuarioActual.MisComentarios.Remove(usuarioActual.MisComentarios.Last());
                             //remuevo el ultimo Post dentro del pool de Posts 
-                            postAux.Comentarios.Remove(postAux.Comentarios.Last());
+                            //postAux.Comentarios.Remove(postAux.Comentarios.Last());
                             //al usuario actual le agrego a su lista el comentario que realizó
                             postAux.Comentarios.Add(c);
                         }
@@ -257,7 +258,7 @@ namespace tp1_grupo6.Logica
 
 
                             //remuevo el ultimo Post dentro del pool de Posts 
-                            postAux.Comentarios.Remove(postAux.Comentarios.Last());
+                           // postAux.Comentarios.Remove(postAux.Comentarios.Last());
                         }
 
                     }
