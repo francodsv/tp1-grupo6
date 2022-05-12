@@ -14,10 +14,12 @@ namespace tp1_grupo6
         [STAThread]
         static void Main()
         {
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            string[] argumentos = new string[1];
+            Application.Run(new Login(argumentos));
         }
     }
 }
