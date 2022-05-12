@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using EasyEncryption;
 
 namespace tp1_grupo6.Logica
 {
@@ -27,27 +27,23 @@ namespace tp1_grupo6.Logica
             this.IdUsuarios = 0;
         }
 
-        public void RegistrarUsuario(int DNI, String Nombre, String Apellido, String Mail, String Password)
+        public bool RegistrarUsuario(int DNI, string Nombre, string Apellido, string Mail, string Password)
         {
-            usuarios.Add(new Usuario(DNI, Nombre, Apellido, Mail, Password));
-        }
-
-        public void RegistrarUsuario(Usuario user)
-        {
-            /*foreach (Usuario user in usuarios)
+            if (!existeUsuario(Mail))
             {
-                if (user.Mail != Mail)
-                {*/
-                    Usuario nuevoUsuario = new Usuario(user.ID, user.DNI, user.Nombre, user.Apellido, user.Mail, user.Password, user.IntentosFallidos, user.Bloqueado);
-                    usuarios.Add(nuevoUsuario);
-                    IdUsuarios++;
-                    nuevoUsuario.ID = IdUsuarios;
-                /*}
-                else
+                try
                 {
-                    Console.WriteLine("El usuario que desea crear ya se encuentra registrea");
+                    string passwordHash = SHA.ComputeSHA256Hash(Password);
+                    Usuario usuario = new Usuario(DNI, Nombre, Apellido, Mail, passwordHash);
+                    usuarios.Add(usuario);
+                    return true;
                 }
-            }*/
+                catch (Exception)
+                {
+                    return false;
+                }
+            }
+            return false;
         }
 
         public void ModificarUsuario(Usuario u)
@@ -75,7 +71,7 @@ namespace tp1_grupo6.Logica
             }
         }
 
-        public void EliminarUsuario(Usuario u, String Mail)
+        public void EliminarUsuario(Usuario u, string Mail)
         {
             foreach (Usuario usuario in usuarios)
             {
@@ -86,7 +82,7 @@ namespace tp1_grupo6.Logica
             }
         }
         // Devuelve el Usuario correspondiente al Mail recibido.
-        public Usuario devolverUsuario(String Mail)
+        public Usuario devolverUsuario(string Mail)
         {
             if (usuarios.Count() > 0)
             {
@@ -101,7 +97,7 @@ namespace tp1_grupo6.Logica
             return null;
         }
         // Se autentica al Usuario.
-        public bool IniciarUsuario(String Mail, String Password)
+        public bool IniciarUsuario(string Mail, string Password)
         {
             foreach (Usuario usuario in usuarios)
             {
@@ -113,7 +109,7 @@ namespace tp1_grupo6.Logica
             return false;
         }
 
-        public bool existeUsuario(String Mail)
+        public bool existeUsuario(string Mail)
         {
             foreach (Usuario usuario in usuarios)
             {
@@ -125,7 +121,7 @@ namespace tp1_grupo6.Logica
             return false;
         }
 
-        public int obtenerUsuarioId(String Mail)
+        public int obtenerUsuarioId(string Mail)
         {
             foreach (Usuario u in usuarios)
             {
@@ -138,7 +134,7 @@ namespace tp1_grupo6.Logica
         }
 
         // Bloquea/Desbloquea el Usuario que se corresponde con el DNI recibido.
-        public bool bloquearDesbloquearUsuario(String Mail, bool Bloqueado)
+        public bool bloquearDesbloquearUsuario(string Mail, bool Bloqueado)
         {
             bool todoOk = false;
             foreach (Usuario u in usuarios)
