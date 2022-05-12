@@ -40,7 +40,7 @@ namespace tp1_grupo6.Logica
             this.Mail=Mail;
             this.Password = Password;
             this.IntentosFallidos = IntentosFallidos;
-            this.Bloqueado = Bloqueado;
+            this.Bloqueado = false;
 
         }
 

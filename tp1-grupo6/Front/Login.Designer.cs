@@ -30,9 +30,10 @@ namespace tp1_grupo6
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelIntentos = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textContrasenia = new System.Windows.Forms.TextBox();
+            this.textUsuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,9 +44,10 @@ namespace tp1_grupo6
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.labelIntentos);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textContrasenia);
+            this.panel1.Controls.Add(this.textUsuario);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -53,6 +55,14 @@ namespace tp1_grupo6
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(422, 614);
             this.panel1.TabIndex = 0;
+            // 
+            // labelIntentos
+            // 
+            this.labelIntentos.AutoSize = true;
+            this.labelIntentos.Location = new System.Drawing.Point(169, 367);
+            this.labelIntentos.Name = "labelIntentos";
+            this.labelIntentos.Size = new System.Drawing.Size(0, 20);
+            this.labelIntentos.TabIndex = 6;
             // 
             // button1
             // 
@@ -69,20 +79,20 @@ namespace tp1_grupo6
             this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // textContrasenia
             // 
-            this.textBox2.Location = new System.Drawing.Point(127, 298);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(233, 26);
-            this.textBox2.TabIndex = 4;
+            this.textContrasenia.Location = new System.Drawing.Point(127, 298);
+            this.textContrasenia.Name = "textContrasenia";
+            this.textContrasenia.PasswordChar = '*';
+            this.textContrasenia.Size = new System.Drawing.Size(233, 26);
+            this.textContrasenia.TabIndex = 4;
             // 
-            // textBox1
+            // textUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(127, 195);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(233, 26);
-            this.textBox1.TabIndex = 3;
+            this.textUsuario.Location = new System.Drawing.Point(127, 195);
+            this.textUsuario.Name = "textUsuario";
+            this.textUsuario.Size = new System.Drawing.Size(233, 26);
+            this.textUsuario.TabIndex = 3;
             // 
             // label3
             // 
@@ -140,8 +150,10 @@ namespace tp1_grupo6
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textContrasenia;
+        private System.Windows.Forms.TextBox textUsuario;
+
+        private System.Windows.Forms.Label labelIntentos;
     }
 }
 
