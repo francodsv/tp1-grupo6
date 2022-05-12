@@ -16,9 +16,10 @@ namespace tp1_grupo6.Front
 
         public Index(RedSocial miRed, Usuario usuario)
         {
-            InitializeComponent();
             this.miRed = miRed;
             this.usuario = usuario;
+            InitializeComponent();
+
         }
 
         private void index_Load(object sender, EventArgs e)
@@ -28,27 +29,25 @@ namespace tp1_grupo6.Front
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            //  
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-   
+            Dispose();
+        }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
 
-
-            /*if (miRed.CerrarSesion(usuario) == true)
-            {
-                Form index = new Index(this.miRed, this.usuario);
-                Form login = new Login();
-                login.Show();
-            }*/
-
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form perfil = new Perfil(this.miRed, this.usuario);
+            this.Hide();
+            perfil.ShowDialog();
+            this.Show();
         }
     }
 }
