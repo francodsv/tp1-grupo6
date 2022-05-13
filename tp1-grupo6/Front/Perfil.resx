@@ -1700,9 +1700,9 @@
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <assembly alias="Microsoft.DotNet.DesignTools.Server" name="Microsoft.DotNet.DesignTools.Server, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
-  <data name="pictureBox3.ErrorImage" type="Microsoft.DotNet.DesignTools.Utilities.Resources.ResXNullRef, Microsoft.DotNet.DesignTools.Server">
-    <value />
+	<assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+	<data name="pictureBox3.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+	<value />
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 27</value>
