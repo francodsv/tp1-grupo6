@@ -25,7 +25,6 @@ namespace tp1_grupo6.Front
 
 
 
-            (object sender, EventArgs e)
 
 
 

@@ -61,7 +61,7 @@ namespace tp1_grupo6
             // 
             // Registrar
             // 
-            this.Registrar.BackColor = System.Drawing.Color.Transparent;
+            this.Registrar.BackColor = System.Drawing.Color.Green;
             this.Registrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             resources.ApplyResources(this.Registrar, "Registrar");
             this.Registrar.Name = "Registrar";
