@@ -31,20 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Amigos));
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -59,7 +48,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
@@ -93,43 +81,6 @@
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // userToolStripMenuItem
-            // 
-            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
-            this.userToolStripMenuItem.Text = "User";
-            // 
-            // cerrarSesiónToolStripMenuItem
-            // 
-            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
-            // 
-            // notificacionesToolStripMenuItem
-            // 
-            this.notificacionesToolStripMenuItem.Name = "notificacionesToolStripMenuItem";
-            this.notificacionesToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.notificacionesToolStripMenuItem.Text = "Notificaciones";
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.homeToolStripMenuItem.Text = "Home";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
-            this.notificacionesToolStripMenuItem,
-            this.cerrarSesiónToolStripMenuItem,
-            this.userToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1344, 24);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
@@ -159,12 +110,6 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.GhostWhite;
-            this.panel5.Controls.Add(this.textBox5);
-            this.panel5.Controls.Add(this.textBox4);
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.button9);
-            this.panel5.Controls.Add(this.button8);
-            this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.textBox2);
             this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.button2);
@@ -175,75 +120,20 @@
             this.panel5.Size = new System.Drawing.Size(736, 654);
             this.panel5.TabIndex = 3;
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(203, 389);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(520, 23);
-            this.textBox5.TabIndex = 14;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(203, 325);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(520, 23);
-            this.textBox4.TabIndex = 13;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(203, 256);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(520, 23);
-            this.textBox3.TabIndex = 12;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.ForeColor = System.Drawing.Color.Transparent;
-            this.button9.Location = new System.Drawing.Point(53, 250);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(118, 33);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Registrar Usuario";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.Location = new System.Drawing.Point(53, 319);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(118, 33);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Modificar Usuario";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(53, 383);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 33);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Eliminar Usuario";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(203, 136);
+            this.textBox2.Location = new System.Drawing.Point(203, 130);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(520, 23);
+            this.textBox2.Size = new System.Drawing.Size(520, 38);
             this.textBox2.TabIndex = 8;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(203, 70);
+            this.textBox1.Location = new System.Drawing.Point(203, 64);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(520, 23);
+            this.textBox1.Size = new System.Drawing.Size(520, 42);
             this.textBox1.TabIndex = 7;
             // 
             // button2
@@ -253,7 +143,7 @@
             this.button2.ForeColor = System.Drawing.Color.Transparent;
             this.button2.Location = new System.Drawing.Point(53, 64);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 33);
+            this.button2.Size = new System.Drawing.Size(118, 42);
             this.button2.TabIndex = 6;
             this.button2.Text = "Agregar amigo";
             this.button2.UseVisualStyleBackColor = false;
@@ -265,7 +155,7 @@
             this.button7.ForeColor = System.Drawing.Color.Transparent;
             this.button7.Location = new System.Drawing.Point(53, 130);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(118, 33);
+            this.button7.Size = new System.Drawing.Size(118, 38);
             this.button7.TabIndex = 5;
             this.button7.Text = "Quitar amigo";
             this.button7.UseVisualStyleBackColor = false;
@@ -342,7 +232,6 @@
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.menuStrip1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1344, 48);
@@ -381,8 +270,6 @@
             this.Name = "Amigos";
             this.Text = "Amigos";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
@@ -392,7 +279,6 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -400,11 +286,6 @@
         #endregion
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem notificacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel5;
@@ -418,12 +299,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;

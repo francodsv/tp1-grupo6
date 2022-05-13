@@ -49,5 +49,20 @@ namespace tp1_grupo6.Front
             perfil.ShowDialog();
             this.Show();
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -48,142 +48,148 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(230, 72);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(80, 187);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 25);
+            this.label1.Size = new System.Drawing.Size(37, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "DNI";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(231, 13);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(109, 78);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(121, 25);
+            this.label2.Size = new System.Drawing.Size(194, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "REGISTRARSE";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBoxDNI
             // 
-            this.textBoxDNI.Location = new System.Drawing.Point(280, 74);
+            this.textBoxDNI.Location = new System.Drawing.Point(163, 184);
             this.textBoxDNI.Name = "textBoxDNI";
-            this.textBoxDNI.Size = new System.Drawing.Size(160, 23);
+            this.textBoxDNI.Size = new System.Drawing.Size(181, 23);
             this.textBoxDNI.TabIndex = 2;
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(280, 131);
+            this.textBoxNombre.Location = new System.Drawing.Point(163, 234);
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(160, 23);
+            this.textBoxNombre.Size = new System.Drawing.Size(181, 23);
             this.textBoxNombre.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(188, 129);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(38, 237);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 25);
+            this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "NOMBRE";
             // 
             // textBoxApellido
             // 
-            this.textBoxApellido.Location = new System.Drawing.Point(280, 187);
+            this.textBoxApellido.Location = new System.Drawing.Point(163, 283);
             this.textBoxApellido.Name = "textBoxApellido";
-            this.textBoxApellido.Size = new System.Drawing.Size(160, 23);
+            this.textBoxApellido.Size = new System.Drawing.Size(181, 23);
             this.textBoxApellido.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(182, 185);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(29, 286);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 25);
+            this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "APELLIDO";
             // 
             // textBoxMail
             // 
-            this.textBoxMail.Location = new System.Drawing.Point(280, 241);
+            this.textBoxMail.Location = new System.Drawing.Point(163, 335);
             this.textBoxMail.Name = "textBoxMail";
-            this.textBoxMail.Size = new System.Drawing.Size(160, 23);
+            this.textBoxMail.Size = new System.Drawing.Size(181, 23);
             this.textBoxMail.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(220, 239);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(70, 338);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 25);
+            this.label5.Size = new System.Drawing.Size(47, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "MAIL";
             // 
             // Cancelar
             // 
-            this.Cancelar.Location = new System.Drawing.Point(135, 405);
+            this.Cancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Cancelar.Location = new System.Drawing.Point(48, 540);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(121, 33);
             this.Cancelar.TabIndex = 9;
             this.Cancelar.Text = "Cancelar";
-            this.Cancelar.UseVisualStyleBackColor = true;
+            this.Cancelar.UseVisualStyleBackColor = false;
             this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
             // Confirmar
             // 
-            this.Confirmar.Location = new System.Drawing.Point(357, 405);
+            this.Confirmar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Confirmar.Location = new System.Drawing.Point(223, 540);
             this.Confirmar.Name = "Confirmar";
             this.Confirmar.Size = new System.Drawing.Size(121, 33);
             this.Confirmar.TabIndex = 10;
             this.Confirmar.Text = "Confirmar";
-            this.Confirmar.UseVisualStyleBackColor = true;
+            this.Confirmar.UseVisualStyleBackColor = false;
             this.Confirmar.Click += new System.EventHandler(this.Confirmar_Click);
             // 
             // textBoxContraseniaRepetida
             // 
-            this.textBoxContraseniaRepetida.Location = new System.Drawing.Point(280, 346);
+            this.textBoxContraseniaRepetida.Location = new System.Drawing.Point(163, 433);
             this.textBoxContraseniaRepetida.Name = "textBoxContraseniaRepetida";
-            this.textBoxContraseniaRepetida.Size = new System.Drawing.Size(160, 23);
+            this.textBoxContraseniaRepetida.PasswordChar = '*';
+            this.textBoxContraseniaRepetida.Size = new System.Drawing.Size(181, 23);
             this.textBoxContraseniaRepetida.TabIndex = 14;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(87, 345);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(3, 436);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 25);
+            this.label6.Size = new System.Drawing.Size(114, 20);
             this.label6.TabIndex = 13;
-            this.label6.Text = "REPITA CONTRASEÑA";
+            this.label6.Text = "REPITA PASS";
             // 
             // textBoxContrasenia
             // 
-            this.textBoxContrasenia.Location = new System.Drawing.Point(280, 292);
+            this.textBoxContrasenia.Location = new System.Drawing.Point(163, 388);
             this.textBoxContrasenia.Name = "textBoxContrasenia";
-            this.textBoxContrasenia.Size = new System.Drawing.Size(160, 23);
+            this.textBoxContrasenia.PasswordChar = '*';
+            this.textBoxContrasenia.Size = new System.Drawing.Size(181, 23);
             this.textBoxContrasenia.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(147, 290);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(65, 391);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 25);
+            this.label7.Size = new System.Drawing.Size(52, 20);
             this.label7.TabIndex = 11;
-            this.label7.Text = "CONTRASEÑA";
+            this.label7.Text = "PASS";
             // 
             // Registrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(595, 460);
+            this.BackColor = System.Drawing.Color.Lavender;
+            this.ClientSize = new System.Drawing.Size(415, 608);
             this.Controls.Add(this.textBoxContraseniaRepetida);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxContrasenia);
