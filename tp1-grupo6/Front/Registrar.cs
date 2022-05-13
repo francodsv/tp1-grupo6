@@ -129,5 +129,10 @@ namespace tp1_grupo6.Front
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
